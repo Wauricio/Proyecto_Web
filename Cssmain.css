@@ -1,0 +1,346 @@
+body{
+	/*margin-left: 3%;
+	margin-right: 3%;*/
+	margin: 0;
+}
+
+
+
+nav{
+background-color: #e3e3e3;
+	border-color: #e7e7e7;
+	position: fixed;
+	width: 100%;
+	z-index: 150;
+	top: 0;
+}
+
+nav ul{
+	
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+}
+
+nav > ul > li {
+	float: left;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 15px 20px;
+}
+
+nav ul li a:hover{
+	background:#3669a3; 
+}
+nav > ul > li:hover div{
+	display: table;
+}
+
+/*submenu*/
+
+nav ul li div{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	background: #ccc;
+	box-sizing: border-box;
+	display: none;
+}
+
+
+nav ul li div ul { 
+	width: 20%;
+	display: table-cell;
+	border-right: 1px solid rgba(255,255,255,.5);
+	box-sizing:  border-box;
+	
+}
+
+nav ul li div ul:last-child { 
+	border: none;
+	
+}
+
+nav ul li div ul .barnav{
+	background: #000;
+	color: #fff;
+}
+
+nav ul li div ul .barnav a{
+	color: #fff;
+
+}
+nav ul li div ul .barnav a:hover{
+	background: none;
+
+}
+nav ul li div ul li a{
+	color: #000;
+}
+nav ul li div ul li a:hover{
+	color: #fff;
+}
+
+
+.barnav.azul {background: #3498db;}
+.barnav.verde{background: #27ae60;}
+.barnav.naranja{background: #e77e22;}
+.barnav.rojo {background: #c0392b; color: #27ae60;}
+
+
+
+.contenedor{
+	padding-right: 20px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+}
+
+
+.table{
+	width: 100%;
+max-width: 100%;
+margin-bottom: 20px;
+background-color: transparent;	
+border-spacing: 0;
+border-collapse: collapse;
+}
+
+.table > tbody> tr:nth-of-type(2n+1){
+	background-color: #f9f9f9;
+}
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+.table > tbody > tr > td {
+	padding: 8px;
+}
+
+.sidevar{
+	position: fixed;
+	top: 49.9px;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	display: block;
+	padding: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #f5f5f5;
+	border-right: 1px solid #eee;
+	width: 16.66666667%;
+}
+
+.main{
+	margin-left: 20%;
+}
+
+.nav-sidevar{
+
+	margin-right: -21px;
+	margin-bottom: 20px;
+	margin-left: -20px;
+}
+
+.nav{
+	padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+
+.col-3{
+	width: 25%;
+	float: left;
+	margin-bottom: 5%;
+}
+
+.col-3 img{
+	border-radius: 50%;
+	display: inline-block;
+}
+.row{
+
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: -15px;
+}
+
+
+
+
+/*mimiguelonas
+
+*/
+
+
+/*barra de proceso*/
+
+div#precargador {
+    width:100%;
+    text-align: left;
+}
+p#progressnum {
+    color: #ccc;
+    font-size: 15px;
+    height: 20px;
+    margin: 5px;
+    font-style: italic;
+    text-align: center;
+}
+#progressbar{ 
+    height: 24px;
+    padding: 4px;
+    background-color: #191919;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #333, 0 1px 0 #777;
+    margin: 0 0 10px;
+    width: 100%;
+}
+div#precargador input {
+    background: #eee;
+    border: none;
+    border-radius: 9px;
+    background: #444;
+    box-shadow: 0 1px 1px #222 inset, 0 1px 0 #999;
+    color: #777;
+    cursor: pointer;
+}
+div#precargador input:hover {
+    background: #666;
+    color: #333;
+}
+#indicador{ 
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(0, 0, 0, 0.8) inset, 0 0 2px black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #0099CC;
+    display: inline-block;
+    height: 24px;
+    margin-right: 10px;
+    width: 100px;
+    background-color: #0099CC;
+    background-image: 
+      repeating-linear-gradient(
+      45deg, 
+      rgba(255, 255, 255, 0.2) 0px, 
+      rgba(255, 255, 255, 0.2) 10px, 
+      rgba(255, 255, 255, 0) 10px, 
+      rgba(255, 255, 255, 0) 20px), 
+      linear-gradient(
+      rgba(255, 255, 255, 0.1) 50%, 
+      rgba(255, 255, 255, 0) 60%), 
+      none;
+    /*------ PARA CHROME Y SAFARI -----*/
+  background: 
+    -webkit-repeating-linear-gradient(
+      45deg, 
+      rgba(255,255,255,.2) 0,
+      rgba(255,255,255,.2) 10px, 
+      rgba(255,255,255,0) 10px,
+      rgba(255,255,255,0) 20px
+    ),
+    -webkit-linear-gradient(
+      rgba(255,255,255,.1) 50%,
+      rgba(255,255,255,0) 60%
+    ),
+    #09c;
+    /*------ PARA FIREFOX----*/
+  background: 
+    -moz-repeating-linear-gradient(
+      45deg, 
+      rgba(255,255,255,.2) 0,
+      rgba(255,255,255,.2) 10px, 
+      rgba(255,255,255,0) 10px,
+      rgba(255,255,255,0) 20px
+    ),
+    -moz-linear-gradient(
+      rgba(255,255,255,.1) 50%,
+      rgba(255,255,255,0) 60%
+    ),
+    #09c;
+    /*------ PARA OPERA----*/
+  background: 
+    -o-repeating-linear-gradient(
+      45deg, 
+      rgba(255,255,255,.2) 0,
+      rgba(255,255,255,.2) 10px, 
+      rgba(255,255,255,0) 10px,
+      rgba(255,255,255,0) 20px
+    ),
+    -o-linear-gradient(
+      rgba(255,255,255,.1) 50%,
+      rgba(255,255,255,0) 60%
+    ),  #09c;
+}
+
+
+/*Check-Radio*/
+.form > div {
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+	display: -moz-groupbox;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"]{
+
+	display: none;
+}
+.form .radio label,
+.form .checkbox  label{
+	color: #0774D9;
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+	position: relative;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer ;
+	-webkit-transition :all 0.3s ease;
+	-0-transition:all 0.3s ease;
+	transition: all 0.3s ease;
+	margin:3px;
+}
+.form .radio label:hover , 
+.form .checkbox label:hover {
+	background:rgba(0,116,217,0.2); 
+}
+.form .radio label:before , 
+.form .checkbox label:before{
+
+	content: "";
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: none;
+	border:3px solid #0774D9;
+	border-radius: 50%; 
+	position: absolute;
+	left: 17px;
+	top: 2.5px;
+}
+
+.form .checkbox label:before{
+	border-radius: 3px;
+}
+
+.form input[type="radio"]:checked + label,
+.form input[type="checkbox"]:checked + label {
+	padding: 5px  15px;
+	background: #0774D9;
+	border-radius: 3px;
+	color: #fff;
+}
+.form input[type="radio"]:checked + label:before,
+.form input[type="checkbox"]:checked + label:before{
+	display: none;
+}
